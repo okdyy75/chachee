@@ -1,10 +1,10 @@
-<h1>Chat room</h1>
+<div class="content">
+  <h1>チャットルーム</h1>
 
-<div id="messages">
-  <%= render @messages %>
+  <form>
+    メッセージ：<input type="text" data-behavior="room_speaker">
+  </form>
+
+  <%= render partial: "messages/messages", locals: { messages: @messages } %>
+
 </div>
-
-<form>
-  <label>Say something:</label><br>
-  <input type="text" data-behavior="room_speaker">
-</form>

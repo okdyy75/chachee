@@ -1,0 +1,10 @@
+<div id="messages">
+  <ul>
+    <% messages.each do |message| %>
+      <li>
+        <div><%= message.ssid %> さん | <%= message.created_at.strftime('%Y-%m-%d %H:%I:%S') %><div>
+        <p><%= message.msg %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
