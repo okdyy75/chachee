@@ -76,7 +76,7 @@ GEM
     debase (0.2.4.1)
       debase-ruby_core_source (>= 0.10.2)
     debase-ruby_core_source (0.10.9)
-    duktape (2.0.1.0)
+    duktape (2.3.0.0)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.12.2)
