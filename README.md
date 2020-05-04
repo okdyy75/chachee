@@ -26,3 +26,10 @@ http://localhost:3000/
 1. rails generate scaffold message ssid:string msg:text
 1. 作成した/db/migrate/xxxxxxxxxx_create_messages.rbをnull: falseにする
 1. rails db:drop:_unsafe db:migrate:reset
+
+# 初期実行
+rbenv exec gem install bundler
+rbenv rehash
+bundle install
+bundle exec rails db:migrate
+bundle exec rails server
