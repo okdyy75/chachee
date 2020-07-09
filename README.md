@@ -10,12 +10,7 @@ Chachee(チャッチー)という簡単なチャットシステムです
 * Rails 5.2.0
 * DB：sqlite3
 
-## 起動
-rdebug-ide --host 0.0.0.0 --port 1234 -- ./bin/rails s -b 0.0.0.0 -p 3000 -e development
-
 ## サイトについて
-
-### チャット機能
 1. ブラウザを2つ開いて、ローカルのwebサーバーにアクセスします。
 http://localhost:3000/
 1. テキストボックスに文字を入力してEnter
@@ -27,9 +22,13 @@ http://localhost:3000/
 1. 作成した/db/migrate/xxxxxxxxxx_create_messages.rbをnull: falseにする
 1. rails db:drop:_unsafe db:migrate:reset
 
-# 初期実行
+# git clone後の初期実行
 rbenv exec gem install bundler
 rbenv rehash
 bundle install
 bundle exec rails db:migrate
 bundle exec rails server
+
+## 起動
+bundle exec rails server
+
